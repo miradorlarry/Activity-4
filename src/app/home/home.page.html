@@ -7,14 +7,14 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Home</ion-title>
-    </ion-toolbar>
-  </ion-header>
-       
-  <ion-button expand="full" shape="round" (click)="goToLogin()">Login</ion-button>
-  <ion-button expand="full" shape="round" (click)="goToSignUp()">Sign Up</ion-button>
-  <ion-button expand="full" shape="round" (click)="goToProfile()">Profile</ion-button>
+
+  <ion-card>
+    <h4>Choose what you want to do</h4>
+    <h6>Lists of functions that can help you in your account</h6>
+        
+    <ion-button  shape="block" (click)="goToLogin()">Login</ion-button>
+    <ion-button  shape="block" (click)="goToSignUp()">Sign Up</ion-button>
+    <ion-button  shape="block" (click)="goToProfile()">Profile</ion-button>
+  </ion-card>
          
 </ion-content>
